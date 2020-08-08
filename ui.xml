@@ -50,7 +50,7 @@
      <bool>true</bool>
     </property>
     <property name="plainText">
-     <string>AHAHHAHAHAHAHAHAHA</string>
+     <string>hex_color</string>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="plainTextEdit_2">
@@ -72,7 +72,7 @@
      <bool>true</bool>
     </property>
     <property name="plainText">
-     <string>test</string>
+     <string>rgb_color</string>
     </property>
    </widget>
   </widget>
