@@ -9,11 +9,11 @@ import colorsys
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 
 
-pendosia = "{:06x}".format(randint(0, 0xFFFFFF))
-etm_super = pendosia
-gay_porn = f"#{etm_super}"
-h = etm_super
-rgb = ImageColor.getrgb(f"{gay_porn}")
+hex = "{:06x}".format(randint(0, 0xFFFFFF))
+hex_new = hex
+rgb_gen = f"#{hex}"
+h = hex_new
+rgb = ImageColor.getrgb(f"{rgb_gen}")
 
 # Создаем белый квадрат
 img = Image.new('RGBA', (100, 100), 'white')    
@@ -31,8 +31,8 @@ with open(r'ui.xml', encoding="utf8") as f:
 
   for elem in root.getiterator():
     try:
-      elem.text = elem.text.replace('AHAHHAHAHAHAHAHAHA', f"#{etm_super}")
-      elem.text = elem.text.replace('test', f"{rgb}")
+      elem.text = elem.text.replace('hex_color', f"#{hex_new}")
+      elem.text = elem.text.replace('rgb_color', f"{rgb}")
     except AttributeError:
       pass
 
